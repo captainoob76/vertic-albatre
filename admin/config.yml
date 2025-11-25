@@ -1,7 +1,6 @@
 backend:
   name: git-gateway # <--- CHANGEMENT CRUCIAL : Netlify gère l'authentification pour vous
   branch: main # Assurez-vous que c'est le nom de votre branche principale (main ou master)
-  auth_scope: local
 # Le répertoire où les articles de blog seront enregistrés
 media_folder: "_posts/images"
 public_folder: "/assets/images"
