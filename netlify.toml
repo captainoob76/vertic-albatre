@@ -1,0 +1,15 @@
+# Force Netlify à traiter toutes les URL non trouvées comme un succès 
+# et à utiliser index.html, ce qui est souvent nécessaire pour les 
+# applications frontales et les chemins d'accès CMS.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+  force = true
