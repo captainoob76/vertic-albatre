@@ -30,9 +30,12 @@ url: "https://verticalbatre.netlify.app" # the base hostname & protocol for your
 theme: minima
 plugins:
   - jekyll-feed
-
-include: ["admin"] # <--- LIGNE À AJOUTER POUR PUBLIER LE DOSSIER ADMIN/
-keep_files: ["admin"]
+# Fichiers à inclure (doit être présent)
+include: ["admin"]
+# Fichiers à conserver dans la destination (_site), CRUCIAL POUR LE CMS
+keep_files: ["admin"] 
+# Si vous avez d'autres éléments dans keep_files, assurez-vous que 'admin' est listé aussi
+# Exemple: keep_files: [".git", "admin"]
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
