@@ -1,11 +1,6 @@
 backend:
-  name: github
-  repo: captainoob76/vertic-albatre # Ex: john-doe/vertic-albatre
-  branch: main # ou 'master' si c'est le nom de votre branche
-
-## Configuration de l'authentification
-#auth_scope: repo
-#oauth_client_id: Ov23liqdWhgHNppM3bmo # ID à obtenir lors de l'étape Netlify (voir ci-dessous)
+  name: git-gateway # <--- CHANGEMENT CRUCIAL : Netlify gère l'authentification pour vous
+  branch: main # Assurez-vous que c'est le nom de votre branche principale (main ou master)
 
 # Le répertoire où les articles de blog seront enregistrés
 media_folder: "_posts/images"
@@ -13,7 +8,7 @@ public_folder: "/assets/images"
 
 # Définition des champs du Blog/Dossiers
 collections:
-  - name: "blog" # Nom interne du contenu (ex: /admin/#/collections/blog)
+  - name: "blog" # Nom interne du contenu
     label: "Dossiers & Actualités"
     folder: "_posts" # Le dossier où Jekyll cherche les articles
     create: true # Permet de créer de nouveaux articles
